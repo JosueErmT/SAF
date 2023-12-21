@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99296EFC-CE25-4A41-B71D-4847DE3037C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SAF</RootNamespace>
+    <AssemblyName>SAF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Control\ControlTipoUsuario.cs" />
+    <Compile Include="Control\ControlCategorias.cs" />
+    <Compile Include="Control\ControlTipoPago.cs" />
+    <Compile Include="Control\ControlNegocios.cs" />
+    <Compile Include="Control\Control.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Modelo\ModeloNegocios.cs" />
+    <Compile Include="Modelo\ModeloCategorias.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="Control\ControlFacturas.cs" />
+    <Compile Include="Control\ControlUsuarios.cs" />
+    <Compile Include="CustomControls\CustomDGV.cs" />
+    <Compile Include="CustomControls\CustomDTP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomExDGV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomPN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomTLP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Extension.cs" />
+    <Compile Include="Entidades\Factura.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Modelo\ModeloTipoUsuario.cs" />
+    <Compile Include="Modelo\Modelo.cs" />
+    <Compile Include="Modelo\ModeloTipoPago.cs" />
+    <Compile Include="Modelo\ModeloFacturas.cs" />
+    <Compile Include="Modelo\ModeloUsuarios.cs" />
+    <Compile Include="Entidades\Negocio.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs" />
+    <Compile Include="Vista\fLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\fLogIn.Designer.cs">
+      <DependentUpon>fLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\fModifyBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\fModifyBills.Designer.cs">
+      <DependentUpon>fModifyBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\fSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\fSignUp.Designer.cs">
+      <DependentUpon>fSignUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\fLogIn.resx">
+      <DependentUpon>fLogIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\fModifyBills.resx">
+      <DependentUpon>fModifyBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\fSignUp.resx">
+      <DependentUpon>fSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\MaterialSkin.Controls.MaterialTextBox2.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Krypton.Toolkit">
+      <HintPath>.\Krypton.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.WinForms.0.9.7\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Bill120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewBill120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Docs\UserManualSAF.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Users120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whatsapp32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manual32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\IconN.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+</Project>

@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="SAF.Control">
+    <Position X="7.75" Y="23.5" Width="7.25" />
+    <AssociationLine Name="Modelo" Type="SAF.Modelo" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="24.938" />
+        <Point X="7.203" Y="24.938" Type="JumpStart" />
+        <Point X="7.036" Y="24.938" Type="JumpEnd" />
+        <Point X="6.801" Y="24.938" />
+        <Point X="6.801" Y="6.181" />
+        <Point X="19.125" Y="6.181" />
+        <Point X="19.125" Y="6.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAIAAAAAAAAAABAAAAAAEEAAAAAogAAAAAAAA=</HashCode>
+      <FileName>Control\Control.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ControlCategorias">
+    <Position X="38" Y="16.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Control\ControlCategorias.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ControlFacturas">
+    <Position X="15.75" Y="16.5" Width="7.5" />
+    <InheritanceLine Type="SAF.Control" FixedToPoint="true">
+      <Path>
+        <Point X="11.375" Y="23.5" />
+        <Point X="11.375" Y="20.483" />
+        <Point X="15.198" Y="20.483" Type="JumpStart" />
+        <Point X="15.365" Y="20.483" Type="JumpEnd" />
+        <Point X="17.312" Y="20.483" />
+        <Point X="17.312" Y="20.108" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAdAAACAAAAAAABAAgAAAAAAAAGEAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Control\ControlFacturas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ControlNegocios">
+    <Position X="7.5" Y="16.5" Width="8" />
+    <InheritanceLine Type="SAF.Control" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.375" Y="23.5" />
+        <Point X="11.375" Y="22.165" />
+        <Point X="10.188" Y="22.165" />
+        <Point X="10.188" Y="19.079" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIQAACAAAAAAAABAAAAAAABAgAAAQAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Control\ControlNegocios.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ControlTipoPago">
+    <Position X="34.75" Y="16.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Control\ControlTipoPago.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ControlTipoUsuario">
+    <Position X="30.5" Y="16.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAAAA=</HashCode>
+      <FileName>Control\ControlTipoUsuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ControlUsuarios">
+    <Position X="23.5" Y="16.5" Width="6.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SAF.ControlUsuarios.Password">
+        <TypeIdentifier>
+          <NewMemberFileName>Control\ControlUsuarios.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAAAACABAAAAAAAAAAAGAABAAAAgACAAAAAA=</HashCode>
+      <FileName>Control\ControlUsuarios.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Connection">
+    <Position X="8" Y="6.5" Width="10" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAkQAIAAAAAAABAAACAAAAEAAAAAAAAiAAAA=</HashCode>
+      <FileName>Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.Modelo">
+    <Position X="18.75" Y="6.5" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAABQAAAAAABABgAAoAQCAAAAAA=</HashCode>
+      <FileName>Modelo\Modelo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oConn" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.ModeloCategorias">
+    <Position X="35.75" Y="11.5" Width="3.25" />
+    <InheritanceLine Type="SAF.Modelo" FixedFromPoint="true">
+      <Path>
+        <Point X="22.188" Y="10.045" />
+        <Point X="22.188" Y="11.125" />
+        <Point X="37.375" Y="11.125" />
+        <Point X="37.375" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\ModeloCategorias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.ModeloFacturas">
+    <Position X="14.5" Y="11.5" Width="7.5" />
+    <InheritanceLine Type="SAF.Modelo" FixedFromPoint="true">
+      <Path>
+        <Point X="22.188" Y="10.045" />
+        <Point X="22.188" Y="11.125" />
+        <Point X="18.25" Y="11.125" />
+        <Point X="18.25" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAVAAACAAAAAAABAAgAAAAAAAAGAAAAAAoAAAAAAAAA=</HashCode>
+      <FileName>Modelo\ModeloFacturas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.ModeloNegocios">
+    <Position X="8.25" Y="11.5" Width="6" />
+    <InheritanceLine Type="SAF.Modelo" FixedFromPoint="true">
+      <Path>
+        <Point X="22.188" Y="10.045" />
+        <Point X="22.188" Y="11.125" />
+        <Point X="11.25" Y="11.125" />
+        <Point X="11.25" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAAAABAAAAAAABAgAAAQABAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\ModeloNegocios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.ModeloTipoPago">
+    <Position X="32.75" Y="11.5" Width="2.75" />
+    <InheritanceLine Type="SAF.Modelo" FixedFromPoint="true">
+      <Path>
+        <Point X="22.188" Y="10.045" />
+        <Point X="22.188" Y="11.125" />
+        <Point X="34.125" Y="11.125" />
+        <Point X="34.125" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\ModeloTipoPago.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.ModeloTipoUsuario">
+    <Position X="29.75" Y="11.5" Width="2.75" />
+    <InheritanceLine Type="SAF.Modelo" FixedFromPoint="true">
+      <Path>
+        <Point X="22.188" Y="10.045" />
+        <Point X="22.188" Y="11.125" />
+        <Point X="31.125" Y="11.125" />
+        <Point X="31.125" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Modelo\ModeloTipoUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.ModeloUsuarios">
+    <Position X="22.25" Y="11.5" Width="7.25" />
+    <InheritanceLine Type="SAF.Modelo" FixedFromPoint="true">
+      <Path>
+        <Point X="22.188" Y="10.045" />
+        <Point X="22.188" Y="11.125" />
+        <Point X="25.875" Y="11.125" />
+        <Point X="25.875" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgQAAAAQAAAAAABAAAAAAAAAAAGAAAAAAoAACAAAAAA=</HashCode>
+      <FileName>Modelo\ModeloUsuarios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.Vista.fLogIn">
+    <Position X="6.75" Y="28" Width="4" />
+    <Members>
+      <Field Name="bnClose" Hidden="true" />
+      <Field Name="bnLogIn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbError" Hidden="true" />
+      <Field Name="mcMain" Hidden="true" />
+      <Field Name="pnLogIn" Hidden="true" />
+      <Field Name="tcMain" Hidden="true" />
+      <Field Name="tlpMain" Hidden="true" />
+      <Field Name="tpMain" Hidden="true" />
+      <Field Name="txDNI" Hidden="true" />
+      <Field Name="txPass" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABABICAowCIAAAJAAAKAAAECRFAAAAAgIgEBwAAkAAQ=</HashCode>
+      <FileName>Vista\fLogIn.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CU" />
+      <Property Name="User" />
+      <Property Name="ExitCode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Vista.fMain">
+    <Position X="12" Y="28" Width="7.5" />
+    <Members>
+      <Field Name="bnBNextMonth" Hidden="true" />
+      <Field Name="bnBPrevMonth" Hidden="true" />
+      <Field Name="bnHBills" Hidden="true" />
+      <Field Name="bnHNewBill" Hidden="true" />
+      <Field Name="bnHSession" Hidden="true" />
+      <Field Name="bnHSettings" Hidden="true" />
+      <Field Name="bnHSLogOut" Hidden="true" />
+      <Field Name="bnHSSettings" Hidden="true" />
+      <Field Name="bnHUsers" Hidden="true" />
+      <Field Name="bnNAdd" Hidden="true" />
+      <Field Name="bnSAUpdate" Hidden="true" />
+      <Field Name="bnSBEmail" Hidden="true" />
+      <Field Name="bnSBOpen" Hidden="true" />
+      <Field Name="bnSBWeb" Hidden="true" />
+      <Field Name="bnSBWhatsApp" Hidden="true" />
+      <Field Name="cbBSearchCols" Hidden="true" />
+      <Field Name="cbNDNI" Hidden="true" />
+      <Field Name="cbNPayType" Hidden="true" />
+      <Field Name="cbSCAccent" Hidden="true" />
+      <Field Name="cbSCDark" Hidden="true" />
+      <Field Name="cbSCLight" Hidden="true" />
+      <Field Name="cbSCPrimary" Hidden="true" />
+      <Field Name="cbSCTextShade" Hidden="true" />
+      <Field Name="cbSCTheme" Hidden="true" />
+      <Field Name="cbUSearchCols" Hidden="true" />
+      <Field Name="chtBNC" Hidden="true" />
+      <Field Name="chtBPayTypes" Hidden="true" />
+      <Field Name="chtBPrices" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvBills" Hidden="true" />
+      <Field Name="dgvSITCategories" Hidden="true" />
+      <Field Name="dgvSITPayTypes" Hidden="true" />
+      <Field Name="dgvSSHolidays" Hidden="true" />
+      <Field Name="dgvUsers" Hidden="true" />
+      <Field Name="dgvUsersLogIns" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpBEndDate" Hidden="true" />
+      <Field Name="dtpBStartDate" Hidden="true" />
+      <Field Name="dtpNDate" Hidden="true" />
+      <Field Name="Icons" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbBDailyGoalPercent" Hidden="true" />
+      <Field Name="lbBDailyGoalPrice" Hidden="true" />
+      <Field Name="lbBDailyGoalTitle" Hidden="true" />
+      <Field Name="lbBNCFrom" Hidden="true" />
+      <Field Name="lbBNCTitle" Hidden="true" />
+      <Field Name="lbBNCTo" Hidden="true" />
+      <Field Name="lbBNCValue" Hidden="true" />
+      <Field Name="lbBPayTypesTitle" Hidden="true" />
+      <Field Name="lbBSumPTitle" Hidden="true" />
+      <Field Name="lbBTPrice" Hidden="true" />
+      <Field Name="lbBTPriceTitle" Hidden="true" />
+      <Field Name="lbHSession" Hidden="true" />
+      <Field Name="lbNError" Hidden="true" />
+      <Field Name="lbNMPrice" Hidden="true" />
+      <Field Name="lbNMPriceTitle" Hidden="true" />
+      <Field Name="lbSAData" Hidden="true" />
+      <Field Name="lbSADetails" Hidden="true" />
+      <Field Name="lbSAError" Hidden="true" />
+      <Field Name="lbSAPass" Hidden="true" />
+      <Field Name="lbSBContact" Hidden="true" />
+      <Field Name="lbSBCopyright" Hidden="true" />
+      <Field Name="lbSBText" Hidden="true" />
+      <Field Name="lbSBTitle" Hidden="true" />
+      <Field Name="lbSITCategories" Hidden="true" />
+      <Field Name="lbSITPayTypes" Hidden="true" />
+      <Field Name="lbSSHolidaysTitle" Hidden="true" />
+      <Field Name="lbSSTitle" Hidden="true" />
+      <Field Name="lsHAAlerts" Hidden="true" />
+      <Field Name="mcBDailyGoal" Hidden="true" />
+      <Field Name="mcBDgv" Hidden="true" />
+      <Field Name="mcBIc" Hidden="true" />
+      <Field Name="mcBNC" Hidden="true" />
+      <Field Name="mcBPayTypes" Hidden="true" />
+      <Field Name="mcBSearch" Hidden="true" />
+      <Field Name="mcBStats" Hidden="true" />
+      <Field Name="mcHAlerts" Hidden="true" />
+      <Field Name="mcHBtns" Hidden="true" />
+      <Field Name="mcHSession" Hidden="true" />
+      <Field Name="mcNAdd" Hidden="true" />
+      <Field Name="mcNIc" Hidden="true" />
+      <Field Name="mcSAbout" Hidden="true" />
+      <Field Name="mcSAData" Hidden="true" />
+      <Field Name="mcSADetails" Hidden="true" />
+      <Field Name="mcSAPass" Hidden="true" />
+      <Field Name="mcSARightPanel" Hidden="true" />
+      <Field Name="mcSCustom" Hidden="true" />
+      <Field Name="mcSITCategories" Hidden="true" />
+      <Field Name="mcSITPayTypes" Hidden="true" />
+      <Field Name="mcSShop" Hidden="true" />
+      <Field Name="mcUDgv" Hidden="true" />
+      <Field Name="mcUSearch" Hidden="true" />
+      <Field Name="mcUStats" Hidden="true" />
+      <Field Name="mdSB1" Hidden="true" />
+      <Field Name="mdSB2" Hidden="true" />
+      <Field Name="mdSB3" Hidden="true" />
+      <Field Name="pbBDailyGoal" Hidden="true" />
+      <Field Name="pnBDailyGoal" Hidden="true" />
+      <Field Name="pnBDateArrow" Hidden="true" />
+      <Field Name="pnBSearchCols" Hidden="true" />
+      <Field Name="pnBSumP" Hidden="true" />
+      <Field Name="pnNAdd" Hidden="true" />
+      <Field Name="pnNMPrice" Hidden="true" />
+      <Field Name="pnSAUpdate" Hidden="true" />
+      <Field Name="pnUSearchCols" Hidden="true" />
+      <Field Name="swNAInner" Hidden="true" />
+      <Field Name="swSCSaveLastRect" Hidden="true" />
+      <Field Name="tcHAlerts" Hidden="true" />
+      <Field Name="tcMain" Hidden="true" />
+      <Field Name="tcSSettings" Hidden="true" />
+      <Field Name="tlpBills" Hidden="true" />
+      <Field Name="tlpBNC" Hidden="true" />
+      <Field Name="tlpBSearch" Hidden="true" />
+      <Field Name="tlpHBtns" Hidden="true" />
+      <Field Name="tlpHome" Hidden="true" />
+      <Field Name="tlpHSession" Hidden="true" />
+      <Field Name="tlpNAdd" Hidden="true" />
+      <Field Name="tlpNAddInner" Hidden="true" />
+      <Field Name="tlpNewBill" Hidden="true" />
+      <Field Name="tlpSABack" Hidden="true" />
+      <Field Name="tlpSAbout" Hidden="true" />
+      <Field Name="tlpSAccount" Hidden="true" />
+      <Field Name="tlpSAData" Hidden="true" />
+      <Field Name="tlpSADetails" Hidden="true" />
+      <Field Name="tlpSAPass" Hidden="true" />
+      <Field Name="tlpSARightPanel" Hidden="true" />
+      <Field Name="tlpSBBack" Hidden="true" />
+      <Field Name="tlpSCBack" Hidden="true" />
+      <Field Name="tlpSCustom" Hidden="true" />
+      <Field Name="tlpSInnerTables" Hidden="true" />
+      <Field Name="tlpSSBack" Hidden="true" />
+      <Field Name="tlpSShop" Hidden="true" />
+      <Field Name="tlpUSearch" Hidden="true" />
+      <Field Name="tlpUsers" Hidden="true" />
+      <Field Name="tpBills" Hidden="true" />
+      <Field Name="tpHAAlerts" Hidden="true" />
+      <Field Name="tpHome" Hidden="true" />
+      <Field Name="tpNewBill" Hidden="true" />
+      <Field Name="tpSAbout" Hidden="true" />
+      <Field Name="tpSAccount" Hidden="true" />
+      <Field Name="tpSCustom" Hidden="true" />
+      <Field Name="tpSettings" Hidden="true" />
+      <Field Name="tpSInnerTables" Hidden="true" />
+      <Field Name="tpSShop" Hidden="true" />
+      <Field Name="tpUsers" Hidden="true" />
+      <Field Name="tsHAlerts" Hidden="true" />
+      <Field Name="tsSettings" Hidden="true" />
+      <Field Name="txBSearch" Hidden="true" />
+      <Field Name="txNBillID" Hidden="true" />
+      <Field Name="txNDesc" Hidden="true" />
+      <Field Name="txNPrice" Hidden="true" />
+      <Field Name="txSADetails" Hidden="true" />
+      <Field Name="txSADNI" Hidden="true" />
+      <Field Name="txSAEmail" Hidden="true" />
+      <Field Name="txSALastName" Hidden="true" />
+      <Field Name="txSAName" Hidden="true" />
+      <Field Name="txSANewPass" Hidden="true" />
+      <Field Name="txSAPass" Hidden="true" />
+      <Field Name="txSAPhone" Hidden="true" />
+      <Field Name="txSARepNewPass" Hidden="true" />
+      <Field Name="txSSCategory" Hidden="true" />
+      <Field Name="txSSWeekDays" Hidden="true" />
+      <Field Name="txUSearch" Hidden="true" />
+    </Members>
+    <AssociationLine Name="CTU" Type="SAF.ControlTipoUsuario" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="37.817" />
+        <Point X="27.198" Y="37.817" Type="JumpStart" />
+        <Point X="27.365" Y="37.817" Type="JumpEnd" />
+        <Point X="28.292" Y="37.817" Type="JumpStart" />
+        <Point X="28.458" Y="37.817" Type="JumpEnd" />
+        <Point X="31.688" Y="37.817" />
+        <Point X="31.688" Y="17.925" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="CTP" Type="SAF.ControlTipoPago" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="39.133" />
+        <Point X="27.198" Y="39.133" Type="JumpStart" />
+        <Point X="27.365" Y="39.133" Type="JumpEnd" />
+        <Point X="28.292" Y="39.133" Type="JumpStart" />
+        <Point X="28.458" Y="39.133" Type="JumpEnd" />
+        <Point X="34.605" Y="39.133" Type="JumpStart" />
+        <Point X="34.771" Y="39.133" Type="JumpEnd" />
+        <Point X="35.25" Y="39.133" />
+        <Point X="35.25" Y="18.492" />
+        <Point X="35.938" Y="18.492" />
+        <Point X="35.938" Y="18.117" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="User" Type="SAF.Usuario" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="41.934" />
+        <Point X="27.198" Y="41.934" Type="JumpStart" />
+        <Point X="27.365" Y="41.934" Type="JumpEnd" />
+        <Point X="28.292" Y="41.934" Type="JumpStart" />
+        <Point X="28.458" Y="41.934" Type="JumpEnd" />
+        <Point X="37.563" Y="41.934" />
+        <Point X="37.563" Y="34.671" />
+        <Point X="37.562" Y="34.671" />
+        <Point X="37.562" Y="31.094" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="oShop" Type="SAF.Negocio" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="35.035" />
+        <Point X="27.198" Y="35.035" Type="JumpStart" />
+        <Point X="27.365" Y="35.035" Type="JumpEnd" />
+        <Point X="28.292" Y="35.035" Type="JumpStart" />
+        <Point X="28.458" Y="35.035" Type="JumpEnd" />
+        <Point X="31.605" Y="35.035" Type="JumpStart" />
+        <Point X="31.771" Y="35.035" Type="JumpEnd" />
+        <Point X="33.875" Y="35.035" />
+        <Point X="33.875" Y="29.488" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Shop" Type="SAF.Negocio" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="40.943" />
+        <Point X="27.198" Y="40.943" Type="JumpStart" />
+        <Point X="27.365" Y="40.943" Type="JumpEnd" />
+        <Point X="28.292" Y="40.943" Type="JumpStart" />
+        <Point X="28.458" Y="40.943" Type="JumpEnd" />
+        <Point X="34.688" Y="40.943" />
+        <Point X="34.688" Y="29.488" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>rsf97nfmn6v0rLuU5rf7cQ6P3/SO5XWm5HvftSLebuY=</HashCode>
+      <FileName>Vista\fMain.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oStats" />
+      <Field Name="oLogIn" />
+      <Field Name="oSignUp" />
+      <Field Name="oModifyBills" />
+      <Field Name="CU" />
+      <Field Name="CF" />
+      <Field Name="CN" />
+      <Field Name="CTU" />
+      <Field Name="CTP" />
+      <Field Name="CC" />
+      <Field Name="oUser" />
+      <Field Name="oPerms" />
+      <Field Name="oShop" />
+      <Property Name="User" />
+      <Property Name="Perms" />
+      <Property Name="Shop" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Vista.fModifyBills">
+    <Position X="26.25" Y="28" Width="4.25" />
+    <Members>
+      <Field Name="bnClose" Hidden="true" />
+      <Field Name="bnUpdate" Hidden="true" />
+      <Field Name="cbPayType" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpDate" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbError" Hidden="true" />
+      <Field Name="lbTitle" Hidden="true" />
+      <Field Name="mcMain" Hidden="true" />
+      <Field Name="pnUpdate" Hidden="true" />
+      <Field Name="tcMain" Hidden="true" />
+      <Field Name="tlpButtons" Hidden="true" />
+      <Field Name="tlpMain" Hidden="true" />
+      <Field Name="tpMain" Hidden="true" />
+      <Field Name="txDesc" Hidden="true" />
+      <Field Name="txID" Hidden="true" />
+      <Field Name="txPrice" Hidden="true" />
+    </Members>
+    <AssociationLine Name="User" Type="SAF.Usuario" FixedToPoint="true">
+      <Path>
+        <Point X="30.5" Y="30.5" />
+        <Point X="30.87" Y="30.5" Type="JumpStart" />
+        <Point X="31.036" Y="30.5" Type="JumpEnd" />
+        <Point X="31.605" Y="30.5" Type="JumpStart" />
+        <Point X="31.771" Y="30.5" Type="JumpEnd" />
+        <Point X="32.979" Y="30.5" Type="JumpStart" />
+        <Point X="33.146" Y="30.5" Type="JumpEnd" />
+        <Point X="33.792" Y="30.5" Type="JumpStart" />
+        <Point X="33.958" Y="30.5" Type="JumpEnd" />
+        <Point X="34.605" Y="30.5" Type="JumpStart" />
+        <Point X="34.771" Y="30.5" Type="JumpEnd" />
+        <Point X="35.073" Y="30.5" Type="JumpStart" />
+        <Point X="35.333" Y="30.5" Type="JumpEnd" />
+        <Point X="35.5" Y="30.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IBpBELA4wCIAAAIAAAKgAAEizHAQAACAIiAAwEAgASQ=</HashCode>
+      <FileName>Vista\fModifyBills.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oMain" />
+      <Field Name="CF" />
+      <Field Name="CTP" />
+      <Property Name="User" />
+      <Property Name="Perms" />
+      <Property Name="ExitCode" />
+      <Property Name="Bill" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Vista.fSignUp">
+    <Position X="20.75" Y="28" Width="4.25" />
+    <Members>
+      <Field Name="bnClose" Hidden="true" />
+      <Field Name="bnSignUp" Hidden="true" />
+      <Field Name="cbType" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbError" Hidden="true" />
+      <Field Name="mcMain" Hidden="true" />
+      <Field Name="pnSignUp" Hidden="true" />
+      <Field Name="tcMain" Hidden="true" />
+      <Field Name="tlpMain" Hidden="true" />
+      <Field Name="tpMain" Hidden="true" />
+      <Field Name="txDetails" Hidden="true" />
+      <Field Name="txDNI" Hidden="true" />
+      <Field Name="txEmail" Hidden="true" />
+      <Field Name="txLastName" Hidden="true" />
+      <Field Name="txName" Hidden="true" />
+      <Field Name="txPass" Hidden="true" />
+      <Field Name="txPhone" Hidden="true" />
+      <Field Name="txRepPass" Hidden="true" />
+    </Members>
+    <AssociationLine Name="CTU" Type="SAF.ControlTipoUsuario" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24" Y="34.107" />
+        <Point X="24" Y="34.482" />
+        <Point X="27.198" Y="34.482" Type="JumpStart" />
+        <Point X="27.365" Y="34.482" Type="JumpEnd" />
+        <Point X="28.292" Y="34.482" Type="JumpStart" />
+        <Point X="28.458" Y="34.482" Type="JumpEnd" />
+        <Point X="30.953" Y="34.482" />
+        <Point X="30.953" Y="17.925" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="User" Type="SAF.Usuario" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.812" Y="34.107" />
+        <Point X="23.812" Y="34.671" />
+        <Point X="27.198" Y="34.671" Type="JumpStart" />
+        <Point X="27.365" Y="34.671" Type="JumpEnd" />
+        <Point X="28.292" Y="34.671" Type="JumpStart" />
+        <Point X="28.458" Y="34.671" Type="JumpEnd" />
+        <Point X="31.605" Y="34.671" Type="JumpStart" />
+        <Point X="31.771" Y="34.671" Type="JumpEnd" />
+        <Point X="33.792" Y="34.671" Type="JumpStart" />
+        <Point X="33.958" Y="34.671" Type="JumpEnd" />
+        <Point X="34.605" Y="34.671" Type="JumpStart" />
+        <Point X="34.771" Y="34.671" Type="JumpEnd" />
+        <Point X="35.167" Y="34.671" Type="JumpStart" />
+        <Point X="35.333" Y="34.671" Type="JumpEnd" />
+        <Point X="36" Y="34.671" />
+        <Point X="36" Y="31.094" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Perms" Type="SAF.Permission" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="34.107" />
+        <Point X="24.25" Y="34.288" />
+        <Point X="27.198" Y="34.288" Type="JumpStart" />
+        <Point X="27.365" Y="34.288" Type="JumpEnd" />
+        <Point X="28.292" Y="34.288" Type="JumpStart" />
+        <Point X="28.458" Y="34.288" Type="JumpEnd" />
+        <Point X="30.87" Y="34.288" Type="JumpStart" />
+        <Point X="31.036" Y="34.288" Type="JumpEnd" />
+        <Point X="31.605" Y="34.288" Type="JumpStart" />
+        <Point X="31.771" Y="34.288" Type="JumpEnd" />
+        <Point X="33.792" Y="34.288" Type="JumpStart" />
+        <Point X="33.958" Y="34.288" Type="JumpEnd" />
+        <Point X="34.605" Y="34.288" Type="JumpStart" />
+        <Point X="34.771" Y="34.288" Type="JumpEnd" />
+        <Point X="35.167" Y="34.288" Type="JumpStart" />
+        <Point X="35.333" Y="34.288" Type="JumpEnd" />
+        <Point X="35.917" Y="34.288" Type="JumpStart" />
+        <Point X="36.083" Y="34.288" Type="JumpEnd" />
+        <Point X="36.698" Y="34.288" Type="JumpStart" />
+        <Point X="36.864" Y="34.288" Type="JumpEnd" />
+        <Point X="37.479" Y="34.288" Type="JumpStart" />
+        <Point X="37.645" Y="34.288" Type="JumpEnd" />
+        <Point X="40.948" Y="34.288" Type="JumpStart" />
+        <Point X="41.115" Y="34.288" Type="JumpEnd" />
+        <Point X="44.01" Y="34.288" Type="JumpStart" />
+        <Point X="44.177" Y="34.288" Type="JumpEnd" />
+        <Point X="44.917" Y="34.288" Type="JumpStart" />
+        <Point X="45.083" Y="34.288" Type="JumpEnd" />
+        <Point X="48.121" Y="34.288" />
+        <Point X="48.121" Y="33.334" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IBoBACBg6CIAJAIABAKAABEixHAAAACgIiAAwAEkQAY=</HashCode>
+      <FileName>Vista\fSignUp.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oMain" />
+      <Field Name="CU" />
+      <Field Name="CTU" />
+      <Property Name="User" />
+      <Property Name="Perms" />
+      <Property Name="ExitCode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Factura">
+    <Position X="38.25" Y="28" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAEAAAAAAAgAEEAAAAAAALAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Factura.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.Negocio">
+    <Position X="32.25" Y="28" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAIAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Negocio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.Usuario">
+    <Position X="35.5" Y="28" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACQAAAAEAAAAgAECAAEAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Entidades\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAF.Statistics">
+    <Position X="43.25" Y="28.25" Width="3.5" />
+    <NestedTypes>
+      <Delegate Name="SAF.Statistics.HandledExceptionHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Statistics.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABBAAANAAAAAASAAAgABAAgCCQAACAAAAQAAAAAAA=</HashCode>
+      <FileName>Statistics.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oMain" />
+      <Field Name="CF" />
+      <Field Name="CN" />
+      <Field Name="CC" />
+      <Property Name="User" />
+      <Property Name="Perms" />
+      <Property Name="Shop" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Permission">
+    <Position X="47.5" Y="28.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAggAAEAAAgUAABAAABCAAAAAAAAIAAAABAAA=</HashCode>
+      <FileName>Permission.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="nPerms" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAF.Log">
+    <Position X="51" Y="28.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAACAAAAABAAAAAAAIAAAAAAAAEAAAA=</HashCode>
+      <FileName>Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SAF.Result" Collapsed="true">
+    <Position X="15.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAQAAgAAAAAAAAgAAAAAAABAAAAAAAAQ=</HashCode>
+      <FileName>Control\Control.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SAF.UsuarioResult" Collapsed="true">
+    <Position X="15.75" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAAAAAAAQAAgAAAAAAAAgAAAAAAABAAAAAAAAQ=</HashCode>
+      <FileName>Control\ControlUsuarios.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SAF.Permissions" Collapsed="true">
+    <Position X="51" Y="32.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAACAAAAAAAAAAAAAABAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Permission.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

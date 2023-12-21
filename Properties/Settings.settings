@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SAF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MinAppW" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">667</Value>
+    </Setting>
+    <Setting Name="MinAppH" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">371</Value>
+    </Setting>
+    <Setting Name="MinInitW" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1088</Value>
+    </Setting>
+    <Setting Name="MinInitH" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">680</Value>
+    </Setting>
+    <Setting Name="InitMul" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="BaseBlockSz" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="BlockMul" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="RightPanelW" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="AnimaChngTab" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="AnimaShow" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="AnimaHide" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SaveLastRect" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Theme" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Primary" Type="MaterialSkin.Primary" Scope="User">
+      <Value Profile="(Default)">LightBlue700</Value>
+    </Setting>
+    <Setting Name="Dark" Type="MaterialSkin.Primary" Scope="User">
+      <Value Profile="(Default)">LightBlue500</Value>
+    </Setting>
+    <Setting Name="Light" Type="MaterialSkin.Primary" Scope="User">
+      <Value Profile="(Default)">LightBlue900</Value>
+    </Setting>
+    <Setting Name="Accent" Type="MaterialSkin.Accent" Scope="User">
+      <Value Profile="(Default)">DeepPurple200</Value>
+    </Setting>
+    <Setting Name="TextShade" Type="MaterialSkin.TextShade" Scope="User">
+      <Value Profile="(Default)">WHITE</Value>
+    </Setting>
+    <Setting Name="LastRect" Type="System.Drawing.Rectangle" Scope="User">
+      <Value Profile="(Default)">0, 0, 0, 0</Value>
+    </Setting>
+    <Setting Name="LogedUser" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
